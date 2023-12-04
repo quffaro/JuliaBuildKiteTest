@@ -1,6 +1,3 @@
-env:
-  JULIA_VERSION = "1.9.3"
-
 steps:
   - label: "wake up"
     key: "first"
@@ -9,18 +6,6 @@ steps:
   - label: ":scroll: script!"
     key: "second"
     command: "script.sh"
-  
-  - label: "init cpu env"
-    key: "third"
-    command: 
-      - "echo $JULIA_DEPOT_PATH"
-      - "julia --project -e 'using Pkg; Pkg.instantiate(;verbose=true)'"
-      - "julia --project -e 'using Pkg; Pkg.precompile()'"
-      - "julia --project -e 'using Pkg; Pkg.status()'"
-    agents:
-      config: cpu
-      queue: central
-      slurm_ntasks: 1
 
   - wait
 
