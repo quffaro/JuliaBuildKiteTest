@@ -1,0 +1,4 @@
+name = "JuliaBuildKiteTest"
+uuid = "315e5f93-988e-4750-9e16-abf9432d27a4"
+authors = ["Matt Cuffaro <cuffaro.matt@gmail.com>"]
+version = "0.1.0"
