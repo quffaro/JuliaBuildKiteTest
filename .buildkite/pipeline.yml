@@ -11,7 +11,7 @@ steps:
 
   - label: ":hammer: testing"
     key: "fourth"
-    command: "tests/test.sh"
+    command: "test.sh"
   
   - wait
   
