@@ -4,12 +4,15 @@ env:
 steps:
   
   - label: "wake up"
+    key: "first"
     command: echo "the sky is awake, so I'm awake, so we have to play!"
 
   - label: ":scroll: script!"
+    key: "second"
     command: "script.sh"
   
   - label: "init cpu env"
+    key: "third"
     command: 
       - "echo $JULIA_DEPOT_PATH"
       - "julia --project -e 'using Pkg; Pkg.instantiate(;verbose=true)'"
@@ -22,11 +25,12 @@ steps:
 
   - wait
 
-  
   - label: ":hammer: testing"
+    key: "fourth"
     command: "tests/test.sh"
   
   - wait
   
   - label: "run julia tests"
+    key: "fifth"
     command: "tests/runtests.jl"
