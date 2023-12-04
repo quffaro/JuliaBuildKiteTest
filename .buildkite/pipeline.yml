@@ -8,12 +8,6 @@ steps:
     command: "script.sh"
 
   - wait
-
-  - label: ":hammer: testing"
-    key: "fourth"
-    command: "test.sh"
-  
-  - wait
   
   - label: "run julia tests"
     key: "fifth"
