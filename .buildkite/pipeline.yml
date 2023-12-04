@@ -1,16 +1,13 @@
 steps:
   - label: "wake up"
-    key: "first"
     command: echo "the sky is awake, so I'm awake, so we have to play!"
 
   - label: ":scroll: script!"
-    key: "second"
     command: "script.sh"
 
   - wait
   
   - label: "run julia tests"
-    key: "fifth"
     command: 
       "julia --project -e 'using Pkg; Pkg.instantiate(;verbose=true)'"
       "julia --project -e 'using Pkg; Pkg.precompile'"
