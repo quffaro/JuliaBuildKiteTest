@@ -12,7 +12,7 @@ steps:
   
   - label: "run julia tests"
     command: 
-      - "echo $JULIA_DEPOT_PATH"
+      - "echo $JULIA_VERSION"
       - "julia --project -e 'using Pkg; Pkg.instantiate(;verbose=true)'"
       - "julia --project -e 'using Pkg; Pkg.precompile'"
       - "julia --project -e 'using Pkg; Pkg.status"
