@@ -2,7 +2,7 @@ env:
   JULIA_VERSION: "1.9.3"
 
 steps:
-  - label: "wake up"
+  - label: ":sunrise: wake up"
     command: echo "the sky is awake, so I'm awake, so we have to play!"
 
   - label: ":scroll: script!"
