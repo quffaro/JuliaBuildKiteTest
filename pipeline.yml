@@ -1,8 +1,0 @@
-steps:
-  - command: echo "Hello!"
-    label: "Example test!"
-  - command: "script.sh"
-    label: ":rocket: Test Build"
-  - wait
-  - command: "tests/test.sh"
-    label: ":hammer: testing"
