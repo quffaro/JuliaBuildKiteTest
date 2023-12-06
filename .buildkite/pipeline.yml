@@ -22,3 +22,7 @@ steps:
       - "sbatch jobscript.sh"
 
   - wait
+
+  - label: "echo!!"
+    command:
+      - echo "hello!!!"
