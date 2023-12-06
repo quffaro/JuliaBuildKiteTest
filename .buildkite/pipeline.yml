@@ -20,3 +20,5 @@ steps:
   - label: "lmao"
     command:
       - "sbatch jobscript.sh"
+
+  - wait
