@@ -12,6 +12,6 @@ module load julia
 
 echo "Running tests on a single CPU core"
 
-julia --project tests/runtests.jl
+srun ./job.sh
 
 date
