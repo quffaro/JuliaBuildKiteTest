@@ -19,4 +19,4 @@ steps:
 
   - label: "lmao"
     command:
-      - "julia --project tests/runtests.jl"
+      - "sbatch jobscript.sh"
