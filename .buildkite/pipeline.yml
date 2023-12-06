@@ -25,4 +25,4 @@ steps:
 
   - label: "echo!!"
     command:
-      - echo "hello!!!"
+      - echo "hello!!"
